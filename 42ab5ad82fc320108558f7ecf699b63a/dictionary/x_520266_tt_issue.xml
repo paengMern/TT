@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element audit="true" label="issue" max_length="40" name="x_520266_tt_issue" sizeclass="3" text_index="true" type="collection">
+        <element attributes="encode_utf8=false" label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
+        <element attributes="encode_utf8=false" label="Customer" max_length="32" name="customer" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Date closed" max_length="40" name="date_closed" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="5000" name="desc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" dependent="short_description" dependent_on_field="short_description" label="Description" mandatory="true" max_length="200" name="description" type="string_full_utf8" use_dependent_field="true"/>
+        <element attributes="edge_encryption_enabled=true" label="IMT" max_length="40" name="imt" type="string"/>
+        <element attributes="encode_utf8=false" label="L1" max_length="32" name="l1" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="L1 Resource" max_length="40" name="l1_resource" type="string"/>
+        <element attributes="encode_utf8=false" label="L2" max_length="32" name="l2" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="L2 Resource" max_length="40" name="l2_resource" type="string"/>
+        <element attributes="encode_utf8=false" label="L3" max_length="32" name="l3" reference="sys_user" type="reference"/>
+        <element attributes="edge_encryption_enabled=true" label="L3 Resource" max_length="40" name="l3_resource" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Level" max_length="40" name="level" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Reference number" max_length="40" name="number" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="1" choice_field="product" choice_table="x_520266_tt_issue" label="Product" mandatory="true" max_length="40" name="product" type="string">
+            <choice>
+                <element inactive_on_update="false" label="CMDP" value="CMDP"/>
+                <element inactive_on_update="false" label="EMM" value="EMM"/>
+                <element inactive_on_update="false" label="Pearl" value="Pearl"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" label="Reference number" max_length="40" name="reference_number" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Requestor" max_length="40" name="requestor" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Severity" max_length="40" name="severity" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="20" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="State" max_length="40" name="state" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Approval" value="approval"/>
+                <element inactive_on_update="false" label="Complete" value="open"/>
+                <element inactive_on_update="false" label="New" value="new"/>
+                <element inactive_on_update="false" label="Work in progress" value="work_in_progress"/>
+                <element inactive_on_update="false" label="Resolution sent" sequence="0" value="Resolution sent"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="type" dependent_on_field="type" label="Subtype" max_length="40" name="subtype" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="Email" inactive_on_update="false" label="Access" value="Access"/>
+                <element dependent_value="Functional Id" inactive_on_update="false" label="Create Functional Id" value="Create Functional Id"/>
+                <element dependent_value="Email" inactive_on_update="false" label="Education" value="Education"/>
+                <element dependent_value="Email" inactive_on_update="false" label="Other" value="Other"/>
+            </choice>
+        </element>
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="product" dependent_on_field="product" label="Type" max_length="40" name="type" type="string" use_dependent_field="true">
+            <choice>
+                <element dependent_value="EMM" inactive_on_update="false" label="Defect" value="Defect"/>
+                <element dependent_value="Pearl" inactive_on_update="false" label="Email" value="Email"/>
+                <element dependent_value="CMDP" inactive_on_update="false" label="Functional Id" value="Functional Id"/>
+                <element dependent_value="Pearl" inactive_on_update="false" label="Query" value="Query"/>
+            </choice>
+        </element>
+        <element label="New File Attachment" max_length="40" name="u_file_attachment_6" type="file_attachment"/>
+        <element label="New UTC Time" max_length="40" name="u_glide_utc_time_5" type="glide_utc_time"/>
+        <element label="New Insert Timestamp" max_length="40" name="u_insert_timestamp_5" type="insert_timestamp"/>
+        <index name="index">
+            <element name="approver"/>
+        </index>
+        <index name="index2">
+            <element name="l1"/>
+        </index>
+        <index name="index3">
+            <element name="l2"/>
+        </index>
+        <index name="index4">
+            <element name="l3"/>
+        </index>
+        <index name="index5">
+            <element name="customer"/>
+        </index>
+    </element>
+</database>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_520266_tt_issue">x_520266_tt_issue</category>
+        <maximum_digits>7</maximum_digits>
+        <number>1000</number>
+        <prefix>TT</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-18 12:39:51</sys_created_on>
+        <sys_id>d87e1e5c2fc320108558f7ecf699b6fa</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>TT</sys_name>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_update_name>sys_number_d87e1e5c2fc320108558f7ecf699b6fa</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-18 12:39:51</sys_updated_on>
+    </sys_number>
+</record_update>
