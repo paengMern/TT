@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_dictionary action="INSERT_OR_UPDATE" element="subtype" table="x_520266_tt_issue">
+    <sys_dictionary action="INSERT_OR_UPDATE" element="number" table="x_520266_tt_resolver">
         <active>true</active>
         <array>false</array>
         <array_denormalized>false</array_denormalized>
-        <attributes>edge_encryption_enabled=true</attributes>
+        <attributes>ignore_filter_on_new=true</attributes>
         <audit>false</audit>
         <calculation><![CDATA[(function calculatedFieldValue(current) {
 
@@ -11,31 +11,31 @@
 	return '';  // return the calculated value
 
 })(current);]]></calculation>
-        <choice>1</choice>
+        <choice/>
         <choice_field/>
         <choice_table/>
-        <column_label>Subtype</column_label>
+        <column_label>Number</column_label>
         <comments/>
         <create_roles/>
-        <default_value/>
+        <default_value>javascript:global.getNextObjNumberPadded();</default_value>
         <defaultsort/>
         <delete_roles/>
-        <dependent>type</dependent>
-        <dependent_on_field>type</dependent_on_field>
+        <dependent/>
+        <dependent_on_field/>
         <display>false</display>
         <dynamic_creation>false</dynamic_creation>
         <dynamic_creation_script/>
         <dynamic_default_value/>
         <dynamic_ref_qual/>
-        <element>subtype</element>
+        <element>number</element>
         <element_reference>false</element_reference>
         <foreign_database/>
         <function_definition/>
         <function_field>false</function_field>
         <internal_type display_value="String">string</internal_type>
-        <mandatory>true</mandatory>
+        <mandatory>false</mandatory>
         <max_length>40</max_length>
-        <name>x_520266_tt_issue</name>
+        <name>x_520266_tt_resolver</name>
         <next_element/>
         <primary>false</primary>
         <read_only>false</read_only>
@@ -52,20 +52,20 @@
         <staged>false</staged>
         <sys_class_name>sys_dictionary</sys_class_name>
         <sys_created_by>admin</sys_created_by>
-        <sys_created_on>2021-03-18 12:39:52</sys_created_on>
-        <sys_id>ac7e5e5c2fc320108558f7ecf699b622</sys_id>
-        <sys_mod_count>12</sys_mod_count>
-        <sys_name>Subtype</sys_name>
+        <sys_created_on>2021-03-25 12:26:50</sys_created_on>
+        <sys_id>359e9a6e2f0320108558f7ecf699b606</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>Number</sys_name>
         <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
         <sys_policy/>
         <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
-        <sys_update_name>sys_dictionary_x_520266_tt_issue_subtype</sys_update_name>
+        <sys_update_name>sys_dictionary_x_520266_tt_resolver_number</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-03-23 12:47:37</sys_updated_on>
+        <sys_updated_on>2021-03-25 12:26:50</sys_updated_on>
         <table_reference>false</table_reference>
         <text_index>false</text_index>
         <unique>false</unique>
-        <use_dependent_field>true</use_dependent_field>
+        <use_dependent_field>false</use_dependent_field>
         <use_dynamic_default>false</use_dynamic_default>
         <use_reference_qualifier>simple</use_reference_qualifier>
         <virtual>false</virtual>
