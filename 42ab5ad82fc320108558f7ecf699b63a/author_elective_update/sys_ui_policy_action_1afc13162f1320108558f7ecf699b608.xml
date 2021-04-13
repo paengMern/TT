@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="DELETE">
+        <cleared>false</cleared>
+        <disabled>ignore</disabled>
+        <field>subtype</field>
+        <mandatory>false</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-06 08:36:54</sys_created_on>
+        <sys_id>1afc13162f1320108558f7ecf699b608</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>subtype</sys_name>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_update_name>sys_ui_policy_action_1afc13162f1320108558f7ecf699b608</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-06 08:36:54</sys_updated_on>
+        <table>x_520266_tt_issue</table>
+        <ui_policy display_value="TT Show or hide Other field">5e8a5b522f1320108558f7ecf699b65f</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="TT">42ab5ad82fc320108558f7ecf699b63a</application>
+        <file_path/>
+        <instance_id>d080cd0cdb03774407072f17d49619c8</instance_id>
+        <instance_name>dev89771</instance_name>
+        <name>sys_ui_policy_action_1afc13162f1320108558f7ecf699b608</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action"><sys_ui_policy_action action="INSERT_OR_UPDATE"><cleared>false</cleared><disabled>ignore</disabled><field>subtype</field><mandatory>false</mandatory><sys_class_name>sys_ui_policy_action</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-04-06 08:36:54</sys_created_on><sys_id>1afc13162f1320108558f7ecf699b608</sys_id><sys_mod_count>0</sys_mod_count><sys_name>subtype</sys_name><sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package><sys_policy/><sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope><sys_update_name>sys_ui_policy_action_1afc13162f1320108558f7ecf699b608</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-04-06 08:36:54</sys_updated_on><table>x_520266_tt_issue</table><ui_policy display_value="TT Show or hide Other field">5e8a5b522f1320108558f7ecf699b65f</ui_policy><visible>ignore</visible></sys_ui_policy_action></record_update>]]></payload>
+        <payload_hash>784292815</payload_hash>
+        <record_name>subtype</record_name>
+        <reverted_from/>
+        <source>e27e84fc2fc320108558f7ecf699b627</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-06 08:36:54</sys_created_on>
+        <sys_id>4b0ddbd22f1320108558f7ecf699b635</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178a653d43e0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-06 08:36:54</sys_updated_on>
+        <type>UI Policy Action</type>
+        <update_guid>830ddbd2611320108becd2736893ca35</update_guid>
+        <update_guid_history>830ddbd2611320108becd2736893ca35:784292815</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-06 08:39:54</sys_created_on>
+        <sys_db_object display_value="" name="sys_ui_policy_action">sys_ui_policy_action</sys_db_object>
+        <sys_id>4675dc7111c94126801cd4305f7a24c4</sys_id>
+        <sys_metadata>1afc13162f1320108558f7ecf699b608</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>subtype</sys_name>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_parent display_value="TT Show or hide Other field">5e8a5b522f1320108558f7ecf699b65f</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_scope_delete display_value="">7162940a2dba4d8c81b00c054eb750c4</sys_scope_delete>
+        <sys_update_name>sys_ui_policy_action_1afc13162f1320108558f7ecf699b608</sys_update_name>
+        <sys_update_version display_value="sys_ui_policy_action_1afc13162f1320108558f7ecf699b608">4b0ddbd22f1320108558f7ecf699b635</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-06 08:39:54</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>
