@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="ACS" max_length="40" name="x_520266_tt_acs" sizeclass="1" type="collection">
-        <element label="Abbreviation" max_length="5" name="abbreviation" type="string"/>
-        <element label="Comment" max_length="200" name="comment" type="string"/>
-        <element label="Name space" max_length="40" name="name_space" type="string"/>
-    </element>
-</database>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
     <sys_script_client action="INSERT_OR_UPDATE">
-        <active>true</active>
+        <active>false</active>
         <applies_extended>false</applies_extended>
         <condition/>
         <description/>
@@ -13,20 +13,35 @@
         <script><![CDATA[function onLoad() {
    //Type appropriate comment here, and begin script below
 	
-	var ga = new GlideAjax('getProduct');
-	ga.addParam('sysparm_prod', 'populateProduct');
-	ga.getXML('pullProduct');
+// 	var ga = new GlideAjax('getProduct');
+// 	ga.addParam('sysparm_prod', 'populateProduct');
+// 	ga.getXML(pullProduct);
+// 	alert('this is it');
 	
-	function pullProduct(response) {
-		var result = response.responseXML.documentElement.getAttribute("result");
+// 	function pullProduct(response) {
+// 		var result = response.responseXML.documentElement.getAttribute("result");
 		
-		if (result) {
-			//alert ("result");
-			//alert ('result');
-			return 'result';
-		}
-	}
-   
+// 		if (result) {
+// 			//alert ("result");
+// 			//alert ('result');
+// 			//return 'result';
+			
+// 		}
+// 	}
+   			//alert('this is it');
+	
+	
+	var ga = new GlideAjax('GetProduct');
+ga.addParam('sysparm_name', 'getProduct');
+//ga.addParam('sysparm_user_name', "Bob");
+ga.getXML(HelloWorldParse);
+ 
+function HelloWorldParse(response) {
+  //var answer = response.responseXML.documentElement.getAttribute("products");
+  //alert(answer); }
+	return 'MAT';}
+	
+	
 }]]></script>
         <sys_class_name>sys_script_client</sys_class_name>
         <sys_created_by>admin</sys_created_by>
@@ -34,7 +49,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>03b894272f9320108558f7ecf699b698</sys_id>
-        <sys_mod_count>4</sys_mod_count>
+        <sys_mod_count>18</sys_mod_count>
         <sys_name>polProduct</sys_name>
         <sys_overrides/>
         <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
@@ -42,7 +57,7 @@
         <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
         <sys_update_name>sys_script_client_03b894272f9320108558f7ecf699b698</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-09 15:40:31</sys_updated_on>
+        <sys_updated_on>2021-04-15 15:57:09</sys_updated_on>
         <table>x_520266_tt_issue</table>
         <type>onLoad</type>
         <ui_type>0</ui_type>

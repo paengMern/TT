@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_520266_tt.ScriptIncludeServerUtil</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>ScriptIncludeServerUtil</name>
+        <script><![CDATA[var ScriptIncludeServerUtil = Class.create();
+ScriptIncludeServerUtil.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+getAssetName: function() 
+	{
+// 		var gr = new GlideRecord('issue');
+//      //   gr.addQuery('product', 'emm');
+//         gr.query();
+// //alert(' count: ' + gr.rows.length);
+// 		return gr.rows.length;
+		
+		var results = new Array();
+		var gr = new GlideRecord('x_520266_tt_products'); //Indicate the table to query from
+		// var gr = new GlideRecord('x_520266_tt_issue');
+		// var gr = new GlideRecord('x_520266_tt_acs');
+		gr.addQuery('products', this.getParameter('sysparm_assetName'));
+		gr.query();
+		
+		//gr.next(); ///***** THIS CODE IS IMPORTANT **** THIS WILL MOVE THE RECORDSET INTO THE NEXT RECORD FOUND... THE FIRST RECORD MUST BE NULL....
+		
+  		//var product = gr.getValue('products');
+ 		while (gr.next()) {	
+			//if (results) {
+			results.push(gr.getValue('products'));
+			//results = results + gr.getValue('products');	
+			//}
+		   
+        //if (gr.next()) {
+ 			//	return gr.getValue('products');
+ 		//} else {		
+ 			//	return 'superman';
+ 	    //}
+ }
+		
+		
+
+		return results;
+	},
+	
+    type: 'ScriptIncludeServerUtil'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-14 13:05:49</sys_created_on>
+        <sys_id>5fd261452f6320108558f7ecf699b640</sys_id>
+        <sys_mod_count>125</sys_mod_count>
+        <sys_name>ScriptIncludeServerUtil</sys_name>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_update_name>sys_script_include_5fd261452f6320108558f7ecf699b640</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-15 15:44:51</sys_updated_on>
+    </sys_script_include>
+</record_update>

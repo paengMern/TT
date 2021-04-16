@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="issue" max_length="40" name="x_520266_tt_issue" sizeclass="9" text_index="true" type="collection">
+    <element audit="true" label="issue" max_length="40" name="x_520266_tt_issue" sizeclass="10" text_index="true" type="collection">
+        <element choice="1" choice_field="abbreviation" choice_table="x_520266_tt_acslist" dependent="abbrev" dependent_on_field="abbrev" label="Abbrev" max_length="5" name="abbrev" type="string" use_dependent_field="true">
+            <choice>
+                <element inactive_on_update="false" label="WWW" sequence="0" value="www"/>
+            </choice>
+        </element>
         <element attributes="encode_utf8=false" label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
-        <element default="40" label="Comments" max_length="40" name="comments" type="string"/>
+        <element active="false" label="Comments" max_length="40" name="comments" type="string"/>
         <element attributes="encode_utf8=false" label="Customer" max_length="32" name="customer" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Date closed" max_length="40" name="date_closed" type="string"/>
@@ -29,12 +34,18 @@
         <element attributes="encode_utf8=false" label="L3" max_length="32" name="l3" reference="x_520266_tt_resolver" reference_qual="level=L3^EQ" reference_qual_condition="level=L3^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="L3 Resource" max_length="40" name="l3_resource" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Level" max_length="40" name="level" read_only="true" type="string"/>
+        <element label="Name_space" max_length="80" name="name_space" read_only="true" type="field_name"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Ticket number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Others" max_length="40" name="others" type="string"/>
         <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;//return current;  // return the calculated value&#13;&#10;&#9;&#13;&#10;&#9;var a = g_form.getValue('product');&#13;&#10;&#9;if(a == 'EMM') {&#13;&#10;&#9;&#9;return &quot;EMM&quot;&#13;&#10;&#9;&#9;&#13;&#10;&#9;} else {&#13;&#10;&#9;&#9;&#13;&#10;&#9;&#9;return &quot;Pearl&quot;&#13;&#10;&#9;}&#13;&#10;&#9;//alert(current);&#13;&#10;&#13;&#10;})(current);" choice="3" choice_field="products" choice_table="x_520266_tt_products" default="-- None --" label="Product" mandatory="true" max_length="40" name="product" type="string">
-            <choice/>
+            <choice>
+                <element inactive_on_update="false" label="CMDP" sequence="0" value="cmdp"/>
+                <element inactive_on_update="false" label="EMM" sequence="1" value="emm"/>
+                <element inactive_on_update="false" label="Pearl" sequence="2" value="pearl"/>
+                <element inactive_on_update="false" label="TTT" sequence="3" value="ttt"/>
+            </choice>
         </element>
-        <element choice="1" label="Product2" max_length="400" name="product2" type="string">
+        <element active="false" choice="1" label="Product2" max_length="400" name="product2" type="string">
             <choice/>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Reference number" max_length="40" name="reference_number" type="string"/>
@@ -54,7 +65,7 @@
                 <element inactive_on_update="false" label="4 - Minimal or No Business Impact" sequence="3" value="4"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" label="Short Description" mandatory="true" max_length="20" name="short_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="20" name="short_description" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="State" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Approval" value="approval"/>
@@ -80,7 +91,7 @@
                 <element dependent_value="Pearl" inactive_on_update="false" label="Query" value="Query"/>
             </choice>
         </element>
-        <element label="Type2" max_length="40" name="type2" type="string"/>
+        <element active="false" label="Type2" max_length="40" name="type2" type="string"/>
         <element label="New File Attachment" max_length="40" name="u_file_attachment_6" type="file_attachment"/>
         <element label="New UTC Time" max_length="40" name="u_glide_utc_time_5" type="glide_utc_time"/>
         <element label="New Insert Timestamp" max_length="40" name="u_insert_timestamp_5" type="insert_timestamp"/>
