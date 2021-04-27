@@ -1,77 +1,77 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="product" table="x_520266_tt_issue" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="environment" table="x_520266_tt_issue" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>product</element>
+            <element>environment</element>
             <name>x_520266_tt_issue</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-03-19 11:21:03</sys_created_on>
-            <sys_id>bac6a3662f6720108558f7ecf699b632</sys_id>
+            <sys_created_on>2021-04-27 14:36:15</sys_created_on>
+            <sys_id>aba87cdd2f7320108558f7ecf699b68a</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>product</sys_name>
+            <sys_name>environment</sys_name>
             <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
             <sys_policy/>
             <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
-            <sys_update_name>sys_choice_x_520266_tt_issue_product</sys_update_name>
+            <sys_update_name>sys_choice_x_520266_tt_issue_environment</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-03-19 11:21:03</sys_updated_on>
+            <sys_updated_on>2021-04-27 14:36:15</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>product</element>
+            <element>environment</element>
             <hint/>
             <inactive>false</inactive>
-            <label>CMDP</label>
+            <label>Development</label>
             <language>en</language>
             <name>x_520266_tt_issue</name>
             <sequence/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-20 15:01:55</sys_created_on>
+            <sys_created_on>2021-04-27 14:36:15</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>596b704b2fe320108558f7ecf699b653</sys_id>
+            <sys_id>2a9870512fb320108558f7ecf699b602</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-20 15:01:55</sys_updated_on>
-            <value>CMDP</value>
+            <sys_updated_on>2021-04-27 14:36:15</sys_updated_on>
+            <value>Development</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>product</element>
+            <element>environment</element>
             <hint/>
             <inactive>false</inactive>
-            <label>EMM</label>
+            <label>Pre-Production</label>
             <language>en</language>
             <name>x_520266_tt_issue</name>
             <sequence/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-20 15:01:44</sys_created_on>
+            <sys_created_on>2021-04-27 14:36:38</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>3e5bbc4b2fe320108558f7ecf699b62d</sys_id>
+            <sys_id>41b87c112fb320108558f7ecf699b64c</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-20 15:01:44</sys_updated_on>
-            <value>EMM</value>
+            <sys_updated_on>2021-04-27 14:36:38</sys_updated_on>
+            <value>Pre-Production</value>
         </sys_choice>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>product</element>
+            <element>environment</element>
             <hint/>
             <inactive>false</inactive>
-            <label>Pearl</label>
+            <label>Production</label>
             <language>en</language>
             <name>x_520266_tt_issue</name>
             <sequence/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-20 15:00:31</sys_created_on>
+            <sys_created_on>2021-04-27 14:36:56</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>33eaf44b2fe320108558f7ecf699b6fd</sys_id>
+            <sys_id>31c8fc112fb320108558f7ecf699b6ed</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-20 15:00:31</sys_updated_on>
-            <value>Pearl</value>
+            <sys_updated_on>2021-04-27 14:36:56</sys_updated_on>
+            <value>Production</value>
         </sys_choice>
     </sys_choice>
 </record_update>

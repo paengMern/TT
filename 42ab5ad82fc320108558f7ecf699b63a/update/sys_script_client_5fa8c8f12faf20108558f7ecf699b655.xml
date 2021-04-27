@@ -5,7 +5,7 @@
         <condition/>
         <description/>
         <field>abbrev</field>
-        <global>true</global>
+        <global>false</global>
         <isolate_script>true</isolate_script>
         <messages/>
         <name>getAcsValues</name>
@@ -14,17 +14,31 @@
    if (isLoading || newValue === '') {
       return;
    }
-
-	
+//alert(g_form.getUniqueValue());
+	//alert(g_form.getValue('abbrev'));
 	var ga = new GlideAjax("GetACSvalue");
 	ga.addParam('sysparm_name', 'getACSvalue');
 	ga.addParam('sysparm_assetName', g_form.getValue('abbrev'));
+	//ga.addParam('sysparm_assetName', g_form.getUniqueValue('abbrev'));
 	ga.getXML(callBackFunction);
 	
 	function callBackFunction(response){
 		var answer=response.responseXML.documentElement.getAttribute("answer");
+		
+			if(answer){
+			 var result = JSON.parse(answer);
+			 g_form.setValue('name_space', result.name_space);		
+			 g_form.setValue('commentsacs', result.commentsacs);		
+			 g_form.setValue('owner', result.owner);		
+			 g_form.setValue('approver', result.approver);		
+			// g_form.setValue('abbrev', result.abbreviation);		
+				
+			}
+				
+
+		
 		//if(answer){
-		g_form.setValue('name_space', answer);	
+		//g_form.setValue('name_space', answer);	
 		//} else {
 			//g_form.setValue('name_space', "");	
 		//}
@@ -42,7 +56,7 @@
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>5fa8c8f12faf20108558f7ecf699b655</sys_id>
-        <sys_mod_count>7</sys_mod_count>
+        <sys_mod_count>26</sys_mod_count>
         <sys_name>getAcsValues</sys_name>
         <sys_overrides/>
         <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
@@ -50,7 +64,7 @@
         <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
         <sys_update_name>sys_script_client_5fa8c8f12faf20108558f7ecf699b655</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-04-16 14:30:51</sys_updated_on>
+        <sys_updated_on>2021-04-27 14:28:02</sys_updated_on>
         <table>x_520266_tt_issue</table>
         <type>onChange</type>
         <ui_type>0</ui_type>

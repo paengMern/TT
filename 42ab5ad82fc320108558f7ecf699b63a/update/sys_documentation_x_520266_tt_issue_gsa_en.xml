@@ -1,25 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_documentation element="name_space" label="Name Space" language="en" table="x_520266_tt_issue">
+    <sys_documentation element="gsa" label="GSA" language="en" table="x_520266_tt_issue">
         <sys_documentation action="INSERT_OR_UPDATE">
-            <element>name_space</element>
+            <element>gsa</element>
             <help/>
             <hint/>
-            <label>Name Space</label>
+            <label>GSA</label>
             <language>en</language>
             <name>x_520266_tt_issue</name>
-            <plural>Name Spaces</plural>
+            <plural>GSAs</plural>
             <sys_class_name>sys_documentation</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-16 10:08:01</sys_created_on>
-            <sys_id>d6c6a3662f6720108558f7ecf699b600</sys_id>
-            <sys_mod_count>1</sys_mod_count>
-            <sys_name>Name Space</sys_name>
+            <sys_created_on>2021-04-27 14:34:58</sys_created_on>
+            <sys_id>ec683c112fb320108558f7ecf699b6af</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>GSA</sys_name>
             <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
             <sys_policy/>
             <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
-            <sys_update_name>sys_documentation_x_520266_tt_issue_name_space_en</sys_update_name>
+            <sys_update_name>sys_documentation_x_520266_tt_issue_gsa_en</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-27 14:04:11</sys_updated_on>
+            <sys_updated_on>2021-04-27 14:34:58</sys_updated_on>
             <url/>
             <url_target/>
         </sys_documentation>
