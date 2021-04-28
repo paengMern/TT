@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element label="type" max_length="40" name="x_520266_tt_type" type="collection">
+        <element label="Type" max_length="40" name="type" type="string"/>
+    </element>
+</database>

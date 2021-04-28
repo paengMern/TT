@@ -1,38 +1,38 @@
 <?xml version="1.0" encoding="UTF-8"?><record_update>
-    <sys_choice action="INSERT_OR_UPDATE" field="abbrev" table="x_520266_tt_issue" version="3">
+    <sys_choice action="INSERT_OR_UPDATE" field="abbrev2" table="x_520266_tt_issue" version="3">
         <sys_choice_set action="INSERT_OR_UPDATE">
-            <element>abbrev</element>
+            <element>abbrev2</element>
             <name>x_520266_tt_issue</name>
             <sys_class_name>sys_choice_set</sys_class_name>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-16 13:43:23</sys_created_on>
-            <sys_id>de9ef0ad2f3320108558f7ecf699b66d</sys_id>
+            <sys_created_on>2021-04-28 14:45:13</sys_created_on>
+            <sys_id>a8544e652f3720108558f7ecf699b6b2</sys_id>
             <sys_mod_count>0</sys_mod_count>
-            <sys_name>abbrev</sys_name>
+            <sys_name>abbrev2</sys_name>
             <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
             <sys_policy/>
             <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
-            <sys_update_name>sys_choice_x_520266_tt_issue_abbrev</sys_update_name>
+            <sys_update_name>sys_choice_x_520266_tt_issue_abbrev2</sys_update_name>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-16 13:43:23</sys_updated_on>
+            <sys_updated_on>2021-04-28 14:45:13</sys_updated_on>
         </sys_choice_set>
         <sys_choice action="INSERT_OR_UPDATE">
             <dependent_value/>
-            <element>abbrev</element>
+            <element>abbrev2</element>
             <hint/>
             <inactive>false</inactive>
-            <label>--Select--</label>
+            <label>-- Select --</label>
             <language>en</language>
             <name>x_520266_tt_issue</name>
             <sequence/>
             <sys_created_by>admin</sys_created_by>
-            <sys_created_on>2021-04-28 13:24:13</sys_created_on>
+            <sys_created_on>2021-04-28 14:45:13</sys_created_on>
             <sys_domain>global</sys_domain>
             <sys_domain_path>/</sys_domain_path>
-            <sys_id>ef8139e52ff320108558f7ecf699b64f</sys_id>
+            <sys_id>0644c2a52f3720108558f7ecf699b639</sys_id>
             <sys_mod_count>0</sys_mod_count>
             <sys_updated_by>admin</sys_updated_by>
-            <sys_updated_on>2021-04-28 13:24:13</sys_updated_on>
+            <sys_updated_on>2021-04-28 14:45:13</sys_updated_on>
             <value>NULL_OVERRIDE</value>
         </sys_choice>
     </sys_choice>
