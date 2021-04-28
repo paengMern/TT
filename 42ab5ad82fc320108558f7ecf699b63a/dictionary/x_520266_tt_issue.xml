@@ -1,17 +1,31 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="issue" max_length="40" name="x_520266_tt_issue" sizeclass="10" text_index="true" type="collection">
-        <element choice="1" choice_field="abbreviation" choice_table="x_520266_tt_acslist" dependent="abbrev" dependent_on_field="abbrev" label="Abbrev" max_length="5" name="abbrev" type="string" use_dependent_field="true">
+    <element audit="true" label="issue" max_length="40" name="x_520266_tt_issue" sizeclass="1" text_index="true" type="collection">
+        <element choice="1" choice_field="abbreviation" label="Abbreviation" max_length="5" name="abbrev" type="string">
             <choice>
+                <element inactive_on_update="false" label="TTT" value="ttt"/>
                 <element inactive_on_update="false" label="WWW" sequence="0" value="www"/>
             </choice>
         </element>
-        <element attributes="encode_utf8=false" label="Approver" max_length="32" name="approver" reference="sys_user" type="reference"/>
-        <element active="false" label="Comments" max_length="40" name="comments" type="string"/>
+        <element choice="1" label="Access type" max_length="500" name="access_type" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Create, Read, Write Modify, Delete Access to Tables &amp; Views Schema" value="Create, Read, Write Modify, Delete Access to Tables &amp; Views Schema"/>
+                <element inactive_on_update="false" label="Read access to Tables &amp; Views in Schema 1,2" value="Read access to Tables &amp; Views in Schema 1,2"/>
+            </choice>
+        </element>
+        <element attributes="encode_utf8=false" label="Approver" max_length="32" name="approver" read_only="true" type="string"/>
+        <element label="Comments" max_length="40" name="comments" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="Customer" max_length="32" name="customer" reference="sys_user" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="date" type="glide_date_time"/>
         <element attributes="edge_encryption_enabled=true" label="Date closed" max_length="40" name="date_closed" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Description" max_length="5000" name="desc" type="string"/>
         <element attributes="edge_encryption_enabled=true" dependent="short_description" dependent_on_field="short_description" label="Description" mandatory="true" max_length="200" name="description" type="string_full_utf8" use_dependent_field="true"/>
+        <element choice="1" label="Environment" max_length="100" name="environment" type="choice">
+            <choice>
+                <element inactive_on_update="false" label="Development" value="development"/>
+                <element inactive_on_update="false" label="Pre-Production" value="pre-production"/>
+                <element inactive_on_update="false" label="Production" value="production"/>
+            </choice>
+        </element>
         <element attributes="edge_encryption_enabled=true" choice="3" default="apac" label="Geography" max_length="40" name="geography" type="string">
             <choice>
                 <element inactive_on_update="false" label="APAC" sequence="0" value="apac"/>
@@ -20,6 +34,7 @@
                 <element inactive_on_update="false" label="Japan" sequence="3" value="japan"/>
             </choice>
         </element>
+        <element label="GSA" max_length="5" name="gsa" type="string"/>
         <element attributes="edge_encryption_enabled=true" choice="3" default="apac" label="Market" max_length="40" name="imt" type="string">
             <choice>
                 <element inactive_on_update="false" label="APAC" sequence="0" value="apac"/>
@@ -27,6 +42,7 @@
                 <element inactive_on_update="false" label="EMEA" sequence="2" value="emea"/>
             </choice>
         </element>
+        <element label="Justification" max_length="200" name="justification" type="string"/>
         <element attributes="encode_utf8=false" label="L1" max_length="32" name="l1" reference="x_520266_tt_resolver" reference_qual="level=L1^EQ" reference_qual_condition="level=L1^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="L1 Resource" max_length="40" name="l1_resource" type="string"/>
         <element attributes="encode_utf8=false" label="L2" max_length="32" name="l2" reference="x_520266_tt_resolver" reference_qual="level=L2^EQ" reference_qual_condition="level=L2^EQ" type="reference"/>
@@ -34,10 +50,11 @@
         <element attributes="encode_utf8=false" label="L3" max_length="32" name="l3" reference="x_520266_tt_resolver" reference_qual="level=L3^EQ" reference_qual_condition="level=L3^EQ" type="reference"/>
         <element attributes="edge_encryption_enabled=true" label="L3 Resource" max_length="40" name="l3_resource" type="string"/>
         <element attributes="edge_encryption_enabled=true" label="Level" max_length="40" name="level" read_only="true" type="string"/>
-        <element label="Name_space" max_length="80" name="name_space" read_only="true" type="field_name"/>
+        <element label="Name space" max_length="80" name="name_space" read_only="true" type="field_name"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Ticket number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Others" max_length="40" name="others" type="string"/>
-        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;//return current;  // return the calculated value&#13;&#10;&#9;&#13;&#10;&#9;var a = g_form.getValue('product');&#13;&#10;&#9;if(a == 'EMM') {&#13;&#10;&#9;&#9;return &quot;EMM&quot;&#13;&#10;&#9;&#9;&#13;&#10;&#9;} else {&#13;&#10;&#9;&#9;&#13;&#10;&#9;&#9;return &quot;Pearl&quot;&#13;&#10;&#9;}&#13;&#10;&#9;//alert(current);&#13;&#10;&#13;&#10;})(current);" choice="3" choice_field="products" choice_table="x_520266_tt_products" default="-- None --" label="Product" mandatory="true" max_length="40" name="product" type="string">
+        <element label="Owner" max_length="40" name="owner" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;//return current;  // return the calculated value&#10;&#9;&#10;&#9;var a = g_form.getValue('product');&#10;&#9;if(a == 'EMM') {&#10;&#9;&#9;return &quot;EMM&quot;&#10;&#9;&#9;&#10;&#9;} else {&#10;&#9;&#9;&#10;&#9;&#9;return &quot;Pearl&quot;&#10;&#9;}&#10;&#9;//alert(current);&#10;&#10;})(current);" choice="3" choice_field="products" choice_table="x_520266_tt_products" default="-- None --" label="Product" mandatory="true" max_length="40" name="product" type="string">
             <choice>
                 <element inactive_on_update="false" label="CMDP" sequence="0" value="cmdp"/>
                 <element inactive_on_update="false" label="EMM" sequence="1" value="emm"/>
@@ -75,19 +92,20 @@
                 <element inactive_on_update="false" label="Resolution sent" sequence="0" value="Resolution sent"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;return '';  // return the calculated value&#13;&#10;&#13;&#10;})(current);" choice="1" dependent="type" dependent_on_field="type" label="Subtype" max_length="40" name="subtype" type="string" use_dependent_field="true">
+        <element attributes="edge_encryption_enabled=true" choice="1" dependent="type" dependent_on_field="type" label="Subtype" max_length="40" name="subtype" type="string" use_dependent_field="true">
             <choice>
                 <element dependent_value="Email" inactive_on_update="false" label="Access" value="Access"/>
-                <element dependent_value="Functional Id" inactive_on_update="false" label="Create Functional Id" value="Create Functional Id"/>
+                <element dependent_value="Analytic Community Space (ACS)" inactive_on_update="false" label="ACS Access" value="ACS Access"/>
+                <element dependent_value="Analytic Community Space (ACS)" inactive_on_update="false" label="Create Functional Id" value="Create Functional Id"/>
                 <element dependent_value="Email" inactive_on_update="false" label="Education" value="Education"/>
                 <element dependent_value="Email" inactive_on_update="false" label="Other" value="Other"/>
             </choice>
         </element>
-        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#13;&#10;&#9;// Add your code here&#13;&#10;&#9;&#13;&#10;&#9;if (current.product == &quot;CMDP&quot;) {&#13;&#10;&#9;   return 'Other CMDP';  // return the calculated value&#9;&#13;&#10;&#9;}&#13;&#10;&#9;&#13;&#10;&#13;&#10;})(current);" choice="3" choice_field="type" choice_table="x_520266_tt_issue" default="-- None --" dependent="product" dependent_on_field="product" label="Type" mandatory="true" max_length="40" name="type" type="string" use_dependent_field="true">
+        <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#9;// Add your code here&#10;&#9;&#10;&#9;if (current.product == &quot;CMDP&quot;) {&#10;&#9;   return 'Other CMDP';  // return the calculated value&#9;&#10;&#9;}&#10;&#9;&#10;&#10;})(current);" choice="3" choice_field="type" choice_table="x_520266_tt_issue" default="-- None --" dependent="product" dependent_on_field="product" label="Type" mandatory="true" max_length="40" name="type" type="string" use_dependent_field="true">
             <choice>
+                <element dependent_value="CMDP" inactive_on_update="false" label="Analytic Community Space (ACS)" value="Analytic Community Space (ACS)"/>
                 <element dependent_value="EMM" inactive_on_update="false" label="Defect" value="Defect"/>
                 <element dependent_value="Pearl" inactive_on_update="false" label="Email" value="Email"/>
-                <element dependent_value="CMDP" inactive_on_update="false" label="Functional Id" value="Functional Id"/>
                 <element dependent_value="Pearl" inactive_on_update="false" label="Query" value="Query"/>
             </choice>
         </element>

@@ -26,14 +26,15 @@
         <list_save_with_form_button>false</list_save_with_form_button>
         <list_style/>
         <messages/>
-        <name>UI action demo</name>
+        <name>Update Status</name>
         <onclick>UIupdateState()</onclick>
         <order>500</order>
         <script><![CDATA[function UIupdateState(){
 	var answer = confirm("Are you sure you want to update?");
 	if(answer == true){
 		
-		g_form.setValue('state', 'Work in progress');
+		g_form.setValue('state', 'Work_in_progress');
+		g_form.save();
 	}
 	
 }
@@ -61,15 +62,15 @@ function reopen(){
         <sys_domain>global</sys_domain>
         <sys_domain_path>/</sys_domain_path>
         <sys_id>a1f1315e2f8320108558f7ecf699b63f</sys_id>
-        <sys_mod_count>6</sys_mod_count>
-        <sys_name>UI action demo</sys_name>
+        <sys_mod_count>9</sys_mod_count>
+        <sys_name>Update Status</sys_name>
         <sys_overrides/>
         <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
         <sys_policy/>
         <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
         <sys_update_name>sys_ui_action_a1f1315e2f8320108558f7ecf699b63f</sys_update_name>
         <sys_updated_by>admin</sys_updated_by>
-        <sys_updated_on>2021-03-29 13:30:34</sys_updated_on>
+        <sys_updated_on>2021-04-28 11:35:13</sys_updated_on>
         <table>x_520266_tt_issue</table>
         <ui11_compatible>true</ui11_compatible>
         <ui16_compatible>false</ui16_compatible>

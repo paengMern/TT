@@ -1,7 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element label="acslist" max_length="40" name="x_520266_tt_acslist" type="collection">
+    <element label="acslist" max_length="40" name="x_520266_tt_acslist" sizeclass="2" type="collection">
         <element label="Abbreviation" max_length="5" name="abbreviation" type="string"/>
-        <element label="Name_space" max_length="40" name="name_space" read_only="true" type="string"/>
+        <element label="Approver" max_length="40" name="approver" type="string"/>
+        <element label="Comments" max_length="200" name="comments" type="string"/>
+        <element label="Name_space" max_length="40" name="name_space" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" read_only="true" type="string"/>
+        <element label="Owner" max_length="40" name="owner" type="string"/>
     </element>
 </database>

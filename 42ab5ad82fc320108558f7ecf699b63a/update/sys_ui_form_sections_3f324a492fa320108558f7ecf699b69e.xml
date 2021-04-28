@@ -10,7 +10,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="Default view">3f324a492fa320108558f7ecf699b69e</sys_ui_form>
-            <sys_ui_section caption="NULL" display_value="" name="sys_hub_action_output" sys_domain="global" view="Default view">c44242c92fa320108558f7ecf699b637</sys_ui_section>
+            <sys_ui_section display_value="">c44242c92fa320108558f7ecf699b637</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2021-04-14 15:03:31</sys_updated_on>
         </sys_ui_form_section>
@@ -24,7 +24,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="Default view">3f324a492fa320108558f7ecf699b69e</sys_ui_form>
-            <sys_ui_section caption="Reference Specification" display_value="Reference Specification" name="sys_hub_action_output" sys_domain="global" view="Default view">40424a492fa320108558f7ecf699b6a2</sys_ui_section>
+            <sys_ui_section display_value="">40424a492fa320108558f7ecf699b6a2</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2021-04-14 15:03:31</sys_updated_on>
         </sys_ui_form_section>
@@ -38,7 +38,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="Default view">3f324a492fa320108558f7ecf699b69e</sys_ui_form>
-            <sys_ui_section caption="Choice List Specification" display_value="Choice List Specification" name="sys_hub_action_output" sys_domain="global" view="Default view">444242c92fa320108558f7ecf699b640</sys_ui_section>
+            <sys_ui_section display_value="">444242c92fa320108558f7ecf699b640</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2021-04-14 15:03:31</sys_updated_on>
         </sys_ui_form_section>
@@ -52,7 +52,7 @@
             <sys_mod_count>0</sys_mod_count>
             <sys_overrides/>
             <sys_ui_form display_value="sys_hub_action_output" name="sys_hub_action_output" sys_domain="global" view="Default view">3f324a492fa320108558f7ecf699b69e</sys_ui_form>
-            <sys_ui_section caption="Default Value" display_value="Default Value" name="sys_hub_action_output" sys_domain="global" view="Default view">c04242c92fa320108558f7ecf699b63d</sys_ui_section>
+            <sys_ui_section display_value="">c04242c92fa320108558f7ecf699b63d</sys_ui_section>
             <sys_updated_by>admin</sys_updated_by>
             <sys_updated_on>2021-04-14 15:03:31</sys_updated_on>
         </sys_ui_form_section>
