@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>true</active>
+        <api_name>x_520266_tt.GetACSvalue</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>GetACSvalue</name>
+        <script><![CDATA[var GetACSvalue = Class.create();
+GetACSvalue.prototype = Object.extendsObject(global.AbstractAjaxProcessor, {
+
+	
+	getACSvalue: function() 
+	{				
+		var gr = new GlideRecord('x_520266_tt_acslist'); //Indicate the table to query from
+		
+		gr.addQuery('abbreviation', this.getParameter('sysparm_assetName'));
+		//gr.addQuery('sys_id', this.getParameter('sysparm_assetName'));
+		gr.query();
+	//	var temp;
+		
+ 	//	while (gr.next()) {	
+			//results.push(gr.getValue('products'));
+		if(gr.next()){
+			//return gr.getValue('name_space');	
+			var obj = {};
+			obj.name_space = gr.getValue('name_space');
+			obj.commentsacs = gr.getValue('comments');
+			obj.abbreviation = gr.getValue('abbreviation');
+			obj.owner = gr.getValue('owner');
+			obj.approver = gr.getValue('approver');
+		
+			return JSON.stringify(obj);
+		} 
+
+		
+		
+		
+	},
+	
+    type: 'GetACSvalue'
+});]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 14:12:50</sys_created_on>
+        <sys_id>91c900752faf20108558f7ecf699b6fc</sys_id>
+        <sys_mod_count>22</sys_mod_count>
+        <sys_name>GetACSvalue</sys_name>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_update_name>sys_script_include_91c900752faf20108558f7ecf699b6fc</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-27 14:28:27</sys_updated_on>
+    </sys_script_include>
+</record_update>

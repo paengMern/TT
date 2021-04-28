@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_script_include">
+    <sys_script_include action="INSERT_OR_UPDATE">
+        <access>package_private</access>
+        <active>false</active>
+        <api_name>x_520266_tt.MyFavoritesAjax</api_name>
+        <caller_access/>
+        <client_callable>true</client_callable>
+        <description/>
+        <name>MyFavoritesAjax</name>
+        <script><![CDATA[var MyFavoritesAjax = Class.create();
+MyFavoritesAjax.prototype = Object.extendsObject(AbstractAjaxProcessor, {
+
+	getFavorites: function() { // build new response xml element for result
+         var result = this.newItem("result");
+	  result.setAttribute("message","returning all favorites");
+         this._addFavorite("color","blue");
+         this._addFavorite("beer","lager");
+         this._addFavorite("pet","dog");
+       },	
+	 
+ 
+	type:"MyFavoritesAjax"
+ 
+ });]]></script>
+        <sys_class_name>sys_script_include</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-14 12:09:21</sys_created_on>
+        <sys_id>264a95cd2f2320108558f7ecf699b68a</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>MyFavoritesAjax</sys_name>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy>read</sys_policy>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_update_name>sys_script_include_264a95cd2f2320108558f7ecf699b68a</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-14 13:07:17</sys_updated_on>
+    </sys_script_include>
+</record_update>

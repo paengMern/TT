@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>approver</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>favAjax</name>
+        <order/>
+        <script><![CDATA[function onLoad() {
+   //Type appropriate comment here, and begin script below
+	
+	// new GlideAjax object referencing name of AJAX script include 
+var ga = new GlideAjax("MyFavoritesAjax"); 
+// add name parameter to define which function we want to call 
+// method name in script include will be getFavorites
+ga.addParam("sysparm_name","getFavorites");
+ 
+// submit request to server, call ajaxResponse function with server response
+ 
+ga.getXML(ajaxResponse);
+ 
+function ajaxResponse(serverResponse) { 
+  // get result element and attributes
+  var result = serverResponse.responseXML.getElementsByTagName("result");
+  var message = result[0].getAttribute("message");
+ 
+  //check for message attribute and alert user
+  //if(message) alert(message);
+ 
+  //build output to display on client for testing 
+  var output = "";
+ 
+  // get favorite elements 
+  var favorites = serverResponse.responseXML.getElementsByTagName("favorite");
+  for(var i = 0; i < favorites.length; i ++) { 
+    var name = favorites[i].getAttribute("name");
+    var value = favorites[i].getAttribute("value");
+    output += name + " = " + value + "\n "; }
+ 
+//  alert(output);
+}
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-14 12:10:40</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>ac7a15cd2f2320108558f7ecf699b670</sys_id>
+        <sys_mod_count>7</sys_mod_count>
+        <sys_name>favAjax</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_update_name>sys_script_client_ac7a15cd2f2320108558f7ecf699b670</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 08:41:45</sys_updated_on>
+        <table>x_520266_tt_issue</table>
+        <type>onLoad</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="product2" label="Product2" language="en" table="x_520266_tt_issue">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>product2</element>
+            <help/>
+            <hint/>
+            <label>Product2</label>
+            <language>en</language>
+            <name>x_520266_tt_issue</name>
+            <plural>Product2s</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-06 09:32:18</sys_created_on>
+            <sys_id>56b923522f5320108558f7ecf699b65d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Product2</sys_name>
+            <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+            <sys_update_name>sys_documentation_x_520266_tt_issue_product2_en</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-06 09:32:18</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>
