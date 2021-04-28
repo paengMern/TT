@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application">
+    <sys_app_application action="DELETE">
+        <active>true</active>
+        <category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category>
+        <description/>
+        <device_type>browser</device_type>
+        <hint/>
+        <name>ACS</name>
+        <order>100</order>
+        <roles>x_520266_tt.acs_user</roles>
+        <sys_class_name>sys_app_application</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-25 13:23:01</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>b07beea62f4320108558f7ecf699b6e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ACS</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_update_name>sys_app_application_b07beea62f4320108558f7ecf699b6e3</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-25 13:23:01</sys_updated_on>
+        <title>ACS</title>
+        <view_name/>
+    </sys_app_application>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="TT">42ab5ad82fc320108558f7ecf699b63a</application>
+        <file_path/>
+        <instance_id>d080cd0cdb03774407072f17d49619c8</instance_id>
+        <instance_name>dev89771</instance_name>
+        <name>sys_app_application_b07beea62f4320108558f7ecf699b6e3</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_app_application"><sys_app_application action="INSERT_OR_UPDATE"><active>true</active><category display_value="Custom Applications">e0355b31ef303000a61d5a3615c0fb78</category><description/><device_type>browser</device_type><hint/><name>ACS</name><order>100</order><roles>x_520266_tt.acs_user</roles><sys_class_name>sys_app_application</sys_class_name><sys_created_by>admin</sys_created_by><sys_created_on>2021-03-25 13:23:01</sys_created_on><sys_domain>global</sys_domain><sys_domain_path>/</sys_domain_path><sys_id>b07beea62f4320108558f7ecf699b6e3</sys_id><sys_mod_count>0</sys_mod_count><sys_name>ACS</sys_name><sys_overrides/><sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package><sys_policy/><sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope><sys_update_name>sys_app_application_b07beea62f4320108558f7ecf699b6e3</sys_update_name><sys_updated_by>admin</sys_updated_by><sys_updated_on>2021-03-25 13:23:01</sys_updated_on><title>ACS</title><view_name/></sys_app_application></record_update>]]></payload>
+        <payload_hash>327086447</payload_hash>
+        <record_name>ACS</record_name>
+        <reverted_from/>
+        <source>e27e84fc2fc320108558f7ecf699b627</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-03-25 13:23:01</sys_created_on>
+        <sys_id>f47beea62f4320108558f7ecf699b6e5</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>178698d75ae0000001</sys_recorded_at>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-03-25 13:23:01</sys_updated_on>
+        <type>Application Menu</type>
+        <update_guid>307beea6be432010f38d5f3bf7d43de5</update_guid>
+        <update_guid_history>307beea6be432010f38d5f3bf7d43de5:327086447</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete display_value="ACS">0e09bf652f6f20108558f7ecf699b684</sys_audit_delete>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-16 12:59:26</sys_created_on>
+        <sys_db_object display_value="" name="sys_app_application">sys_app_application</sys_db_object>
+        <sys_id>496cd52ae07e42acac6c7559cf9c71c9</sys_id>
+        <sys_metadata>b07beea62f4320108558f7ecf699b6e3</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>ACS</sys_name>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_scope_delete display_value="">7162940a2dba4d8c81b00c054eb750c4</sys_scope_delete>
+        <sys_update_name>sys_app_application_b07beea62f4320108558f7ecf699b6e3</sys_update_name>
+        <sys_update_version display_value="sys_app_application_b07beea62f4320108558f7ecf699b6e3">f47beea62f4320108558f7ecf699b6e5</sys_update_version>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-16 12:59:26</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

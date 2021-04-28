@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_security_acl_role">
+    <sys_security_acl_role action="INSERT_OR_UPDATE">
+        <sys_class_name>sys_security_acl_role</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-06 09:19:22</sys_created_on>
+        <sys_id>30c6279e2f1320108558f7ecf699b6a8</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_520266_tt_products.x_520266_tt.products_user</sys_name>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_security_acl display_value="x_520266_tt_products">70c6279e2f1320108558f7ecf699b6a5</sys_security_acl>
+        <sys_update_name>sys_security_acl_role_30c6279e2f1320108558f7ecf699b6a8</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-06 09:19:22</sys_updated_on>
+        <sys_user_role display_value="x_520266_tt.products_user" name="x_520266_tt.products_user">20c6eb5e2f1320108558f7ecf699b646</sys_user_role>
+        <transaction_id/>
+    </sys_security_acl_role>
+</record_update>

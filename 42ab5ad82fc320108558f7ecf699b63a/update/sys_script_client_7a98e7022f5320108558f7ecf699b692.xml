@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>false</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description/>
+        <field>product2</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>pullProduct</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+	var ga = new GlideAjax('getProduct');
+	ga.addParam('sysparm_prod', 'populateProduct');
+	ga.getXML(pullProduct);
+	
+	function pullProduct(response) {
+		var result = response.responseXML.documentElement.getAttribute("result");
+		
+		if (result) {
+			//alert ("result");
+			// g_form.setValue('Product2', result);
+			return result;
+		}
+	}
+	
+   //Type appropriate comment here, and begin script below
+	
+	//alert('newValue' + newValue);
+//	var a = g_form.getValue('subtype');
+//if(newValue =='Other') {
+  // g_form.setVisible('others', true);  
+//} else {
+  // g_form.setVisible('others', false);  
+	
+//}
+  
+	//return 'SN TT';
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-04-05 14:51:20</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>7a98e7022f5320108558f7ecf699b692</sys_id>
+        <sys_mod_count>23</sys_mod_count>
+        <sys_name>pullProduct</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_update_name>sys_script_client_7a98e7022f5320108558f7ecf699b692</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-04-09 15:36:47</sys_updated_on>
+        <table>x_520266_tt_issue</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>
