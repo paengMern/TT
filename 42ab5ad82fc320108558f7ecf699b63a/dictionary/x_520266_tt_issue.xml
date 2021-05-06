@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
-    <element audit="true" label="issue" max_length="40" name="x_520266_tt_issue" sizeclass="1" text_index="true" type="collection">
+    <element audit="true" label="issue" max_length="40" name="x_520266_tt_issue" sizeclass="12" text_index="true" type="collection">
         <element active="false" attributes="is_searchable_choice=true" choice="1" choice_field="abbreviation" choice_table="x_520266_tt_acslist" label="Abbreviation" max_length="5" name="abbrev" type="string">
             <choice>
                 <element inactive_on_update="false" label="--Select--" value="NULL_OVERRIDE"/>
@@ -16,12 +16,13 @@
                 <element inactive_on_update="false" label="Read access to Tables &amp; Views in Schema 1,2" value="Read access to Tables &amp; Views in Schema 1,2"/>
             </choice>
         </element>
+        <element label="Additional comments (Customer visible)" max_length="4000" name="additional_comment" type="journal_input"/>
         <element attributes="encode_utf8=false" label="Approver" max_length="32" name="approver" read_only="true" type="string"/>
         <element label="Comments" max_length="40" name="comments" read_only="true" type="string"/>
         <element attributes="encode_utf8=false" label="Customer" max_length="32" name="customer" reference="sys_user" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="Date" max_length="40" name="date" type="glide_date_time"/>
-        <element attributes="edge_encryption_enabled=true" label="Date closed" max_length="40" name="date_closed" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Description" max_length="5000" name="desc" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="javascript:new GlideDate();" label="Date" max_length="40" name="date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Date closed" max_length="40" name="date_closed" read_only="true" type="calendar_date_time"/>
+        <element attributes="edge_encryption_enabled=true" label="Description" max_length="10000" name="desc" type="string"/>
         <element attributes="edge_encryption_enabled=true" dependent="short_description" dependent_on_field="short_description" label="Description" mandatory="true" max_length="200" name="description" type="string_full_utf8" use_dependent_field="true"/>
         <element choice="1" label="Environment" max_length="100" name="environment" type="choice">
             <choice>
@@ -39,21 +40,18 @@
             </choice>
         </element>
         <element label="GSA" max_length="5" name="gsa" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="apac" label="Market" max_length="40" name="imt" type="string">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="apac - anz" label="Market" max_length="40" name="imt" type="string">
             <choice>
-                <element inactive_on_update="false" label="APAC" sequence="0" value="apac"/>
+                <element inactive_on_update="false" label="APAC - ANZ" sequence="0" value="apac - anz"/>
                 <element inactive_on_update="false" label="Americas" sequence="1" value="americas"/>
-                <element inactive_on_update="false" label="EMEA" sequence="2" value="emea"/>
+                <element inactive_on_update="false" label="EMEA - UKI" sequence="2" value="emea - uki"/>
             </choice>
         </element>
         <element label="Justification" max_length="200" name="justification" type="string"/>
         <element attributes="encode_utf8=false" label="L1" max_length="32" name="l1" reference="x_520266_tt_resolver" reference_qual="level=L1^EQ" reference_qual_condition="level=L1^EQ" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="L1 Resource" max_length="40" name="l1_resource" type="string"/>
         <element attributes="encode_utf8=false" label="L2" max_length="32" name="l2" reference="x_520266_tt_resolver" reference_qual="level=L2^EQ" reference_qual_condition="level=L2^EQ" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="L2 Resource" max_length="40" name="l2_resource" type="string"/>
         <element attributes="encode_utf8=false" label="L3" max_length="32" name="l3" reference="x_520266_tt_resolver" reference_qual="level=L3^EQ" reference_qual_condition="level=L3^EQ" type="reference"/>
-        <element attributes="edge_encryption_enabled=true" label="L3 Resource" max_length="40" name="l3_resource" type="string"/>
-        <element attributes="edge_encryption_enabled=true" label="Level" max_length="40" name="level" read_only="true" type="string"/>
+        <element attributes="edge_encryption_enabled=true" default="L1" label="Level" max_length="40" name="level" read_only="true" type="string"/>
         <element label="Name space" max_length="40" name="name_space" read_only="true" type="string"/>
         <element attributes="edge_encryption_enabled=true" default="javascript:global.getNextObjNumberPadded();" label="Ticket number" max_length="40" name="number" read_only="true" type="string"/>
         <element label="Others" max_length="40" name="others" type="string"/>
@@ -61,9 +59,10 @@
         <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#10;&#9;// Add your code here&#10;&#9;//return current;  // return the calculated value&#10;&#9;&#10;&#9;var a = g_form.getValue('product');&#10;&#9;if(a == 'EMM') {&#10;&#9;&#9;return &quot;EMM&quot;&#10;&#9;&#9;&#10;&#9;} else {&#10;&#9;&#9;&#10;&#9;&#9;return &quot;Pearl&quot;&#10;&#9;}&#10;&#9;//alert(current);&#10;&#10;})(current);" choice="3" choice_field="products" choice_table="x_520266_tt_products" label="Product" mandatory="true" max_length="40" name="product" type="string">
             <choice>
                 <element inactive_on_update="false" label="CMDP" sequence="0" value="cmdp"/>
+                <element inactive_on_update="false" label="Pearl" sequence="1" value="pearl"/>
             </choice>
         </element>
-        <element choice="1" label="Product2" max_length="400" name="product2" reference="x_520266_tt_products" type="reference">
+        <element active="false" choice="1" label="Product2" max_length="400" name="product2" reference="x_520266_tt_products" type="reference">
             <choice/>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Reference number" max_length="40" name="reference_number" type="string"/>
@@ -84,7 +83,7 @@
             </choice>
         </element>
         <element attributes="edge_encryption_enabled=true" label="Short Description" max_length="20" name="short_description" type="string"/>
-        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="State" max_length="40" name="state" type="choice">
+        <element attributes="edge_encryption_enabled=true" choice="3" default="new" label="State" mandatory="true" max_length="40" name="state" type="choice">
             <choice>
                 <element inactive_on_update="false" label="Approval" value="approval"/>
                 <element inactive_on_update="false" label="Complete" value="open"/>
@@ -100,21 +99,23 @@
                 <element dependent_value="Analytic Community Space (ACS)" inactive_on_update="false" label="Create Functional Id" value="Create Functional Id"/>
                 <element dependent_value="Email" inactive_on_update="false" label="Education" value="Education"/>
                 <element dependent_value="Email" inactive_on_update="false" label="Other" value="Other"/>
+                <element dependent_value="Query" inactive_on_update="false" label="Query" value="Query"/>
             </choice>
         </element>
+        <element label="ticketComments" max_length="300" name="ticketcomments" type="string"/>
         <element attributes="edge_encryption_enabled=true" calculation="(function calculatedFieldValue(current) {&#10;&#9;// Add your code here&#10;&#9;&#10;&#9;if (current.product == &quot;CMDP&quot;) {&#10;&#9;   return 'Other CMDP';  // return the calculated value&#9;&#10;&#9;}&#10;&#9;&#10;&#10;})(current);" choice="3" choice_field="type" choice_table="x_520266_tt_issue" default="-- None --" dependent="product" dependent_on_field="product" label="Type" mandatory="true" max_length="40" name="type" type="string" use_dependent_field="true">
             <choice>
                 <element dependent_value="CMDP" inactive_on_update="false" label="Analytic Community Space (ACS)" value="Analytic Community Space (ACS)"/>
                 <element dependent_value="EMM" inactive_on_update="false" label="Defect" value="Defect"/>
                 <element dependent_value="Pearl" inactive_on_update="false" label="Email" value="Email"/>
-                <element dependent_value="Pearl" inactive_on_update="false" label="Query" value="Query"/>
+                <element dependent_value="CMDP" inactive_on_update="false" label="Query" value="Query"/>
             </choice>
         </element>
-        <element dependent="product2" dependent_on_field="product2" label="Type2" max_length="40" name="type2" reference="x_520266_tt_type" type="reference" use_dependent_field="true"/>
-        <element label="New File Attachment" max_length="40" name="u_file_attachment_6" type="file_attachment"/>
-        <element label="New UTC Time" max_length="40" name="u_glide_utc_time_5" type="glide_utc_time"/>
-        <element label="New Insert Timestamp" max_length="40" name="u_insert_timestamp_5" type="insert_timestamp"/>
-        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_2" type="string"/>
+        <element active="false" dependent="product" dependent_on_field="product" display="true" label="Type2" max_length="40" name="type2" reference="x_520266_tt_products" reference_qual="javascript:&quot;products=&quot; + current.product2;" type="reference" use_dependent_field="true" use_reference_qualifier="advanced"/>
+        <element label="Attachment" max_length="40" name="u_file_attachment_6" type="file_attachment"/>
+        <element active="false" label="Work notes" max_length="4000" name="w1" type="journal_input"/>
+        <element dependent="additional_comment" dependent_on_field="additional_comment" label="w1l" max_length="4000" name="w1l" type="journal_list" use_dependent_field="true"/>
+        <element label="Work notes" max_length="4000" name="work_notes" type="journal_input"/>
         <index name="index">
             <element name="approver"/>
         </index>
@@ -133,5 +134,11 @@
         <index name="index6">
             <element name="customer"/>
         </index>
+        <element attributes="edge_encryption_enabled=true" label="L1 Resource" max_length="40" name="l1_resource" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="L2 Resource" max_length="40" name="l2_resource" type="string"/>
+        <element label="New UTC Time" max_length="40" name="u_glide_utc_time_5" type="glide_utc_time"/>
+        <element attributes="edge_encryption_enabled=true" label="L3 Resource" max_length="40" name="l3_resource" type="string"/>
+        <element attributes="edge_encryption_enabled=true" label="New String" max_length="40" name="u_string_2" type="string"/>
+        <element label="New Insert Timestamp" max_length="40" name="u_insert_timestamp_5" type="insert_timestamp"/>
     </element>
 </database>

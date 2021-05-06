@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="ACS" section_id="10ab2b462f3320108558f7ecf699b6a3" sys_domain="global" table="x_520266_tt_issue" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>abbrev2</element>
+            <position>0</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>47cb2f462f3320108558f7ecf699b64f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>name_space</element>
+            <position>1</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>c7cb2f462f3320108558f7ecf699b64f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>comments</element>
+            <position>2</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>4bcb2f462f3320108558f7ecf699b64f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>owner</element>
+            <position>3</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>cbcb2f462f3320108558f7ecf699b64f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>approver</element>
+            <position>4</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>4fcb2f462f3320108558f7ecf699b64f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>.split</element>
+            <position>5</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>cfcb2f462f3320108558f7ecf699b64f</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type>.split</type>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>access_type</element>
+            <position>6</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>43cb2f462f3320108558f7ecf699b650</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>gsa</element>
+            <position>7</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>c3cb2f462f3320108558f7ecf699b650</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>environment</element>
+            <position>8</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>47cb2f462f3320108558f7ecf699b650</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>justification</element>
+            <position>9</position>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:34:17</sys_created_on>
+            <sys_id>c7cb2f462f3320108558f7ecf699b650</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="ACS" display_value="ACS" name="x_520266_tt_issue" sys_domain="global" view="Default view">10ab2b462f3320108558f7ecf699b6a3</sys_ui_section>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:34:17</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>ACS</caption>
+            <header>false</header>
+            <name>x_520266_tt_issue</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>admin</sys_created_by>
+            <sys_created_on>2021-04-30 11:33:33</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>10ab2b462f3320108558f7ecf699b6a3</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_520266_tt_issue</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+            <sys_update_name>sys_ui_section_10ab2b462f3320108558f7ecf699b6a3</sys_update_name>
+            <sys_updated_by>admin</sys_updated_by>
+            <sys_updated_on>2021-04-30 11:33:33</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

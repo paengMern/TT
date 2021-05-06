@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_ui_policy_action">
+    <sys_ui_policy_action action="INSERT_OR_UPDATE">
+        <cleared>false</cleared>
+        <disabled>true</disabled>
+        <field>subtype</field>
+        <mandatory>ignore</mandatory>
+        <sys_class_name>sys_ui_policy_action</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2021-05-05 13:16:40</sys_created_on>
+        <sys_id>b8233d772f3320108558f7ecf699b6cf</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>subtype</sys_name>
+        <sys_package display_value="TT" source="x_520266_tt">42ab5ad82fc320108558f7ecf699b63a</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="TT">42ab5ad82fc320108558f7ecf699b63a</sys_scope>
+        <sys_update_name>sys_ui_policy_action_b8233d772f3320108558f7ecf699b6cf</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2021-05-05 13:16:40</sys_updated_on>
+        <table>x_520266_tt_issue</table>
+        <ui_policy display_value="Set to readonly if status = closed or complete">41ce7f1b2f3320108558f7ecf699b688</ui_policy>
+        <visible>ignore</visible>
+    </sys_ui_policy_action>
+</record_update>
